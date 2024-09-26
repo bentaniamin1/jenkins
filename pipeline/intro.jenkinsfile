@@ -1,0 +1,10 @@
+pipeline {
+    agent any // Correct dans un pipeline déclaratif
+    stages {
+        stage('Test Command') {
+            steps {
+                sh 'echo "hello world"'
+            }
+        }
+    }
+}
