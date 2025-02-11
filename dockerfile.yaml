@@ -1,4 +1,4 @@
-FROM jenkins:1.565.3
+FROM jenkins:2.492.1
 
 COPY https.pem /var/lib/jenkins/cert
 COPY https.key /var/lib/jenkins/pk
