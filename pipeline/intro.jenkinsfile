@@ -7,7 +7,7 @@ pipeline {
             }
         stage('Deploy') {
             steps {
-                sh 'echo "frf "'
+                sh 'echo "frf test jenkins pull "'
             }
         }
     }
