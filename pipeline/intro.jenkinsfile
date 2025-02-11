@@ -5,6 +5,11 @@ pipeline {
             steps {
                 sh 'echo "hello world ! "'
             }
+        stage('build') {
+            steps {
+                sh 'echo "frf buils jenkins pull "'
+            }
+        }
         stage('Deploy') {
             steps {
                 sh 'echo "frf test jenkins pull "'
