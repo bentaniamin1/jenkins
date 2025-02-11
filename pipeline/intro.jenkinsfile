@@ -5,6 +5,10 @@ pipeline {
             steps {
                 sh 'echo "hello world ! "'
             }
+        stage('Deploy') {
+            steps {
+                sh 'echo "frf "'
+            }
         }
     }
 }
