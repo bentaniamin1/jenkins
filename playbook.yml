@@ -1,0 +1,19 @@
+---
+- name: Check Apache web server
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Ensure Apache is running
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: check status of Apache
+      shell: systemctl status apache2
+      register: result
+
+    
+    - name: Display the status of Apache
+      debug:
+        var: result.stdout_lines
